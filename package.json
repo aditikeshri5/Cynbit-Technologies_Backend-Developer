@@ -1,0 +1,17 @@
+{
+  "name": "cynbit-backend-perspective-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Passive public-website backend audit and illustrative Express security examples",
+  "main": "examples/validation.js",
+  "scripts": {
+    "check": "node --check examples/validation.js && node --check examples/error-handler.js && node --check examples/cors-and-security.js && node --check examples/rate-limit.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "zod": "^4.1.0"
+  }
+}
